@@ -1,0 +1,212 @@
+#next,
+#prev {
+    color: #333;
+    display: inline-block;
+    font: normal bold 20px Arial,sans-serif;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+}
+
+#next,
+#prev { padding: 0.5em 1.5em }
+
+#next { text-align: right }
+
+#next:before,
+#next:after,
+#prev:before,
+#prev:after {
+    background: #333;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    content: "";
+    display: block;
+    height: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1em;
+}
+
+#prev:before,
+#prev:after { left: 0 }
+
+#next:before,
+#prev:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#next:after,
+#prev:after {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#prev:after,
+#next:before { margin-top: -.36em }
+
+#next:hover,
+#next:focus,
+#prev:hover,
+#prev:focus { color: #E57676 }
+
+#next:hover:before,
+#next:hover:after,
+#next:focus:before,
+#next:focus:after,
+#prev:hover:before,
+#prev:hover:after,
+#prev:focus:before,
+#prev:focus:after { background: #E57676 }
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #F9F9F9;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+ }
+
+body {
+    font-family: 'Signika', sans-serif;
+ }
+ .bg-grey {
+    background: #292929;
+ }
+ .footer-basic {
+    padding:40px 0;
+    background-color:#E57676;
+    color:#fff5e7;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    /* border-radius:50%;
+    border:1px solid rgb(141, 52, 52); */
+    margin:0 8px;
+    color:inherit;
+    opacity:100;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.75;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #686762;
+    margin-bottom:0;
+  }
+  
